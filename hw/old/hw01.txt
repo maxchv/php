@@ -1,0 +1,6 @@
+Домашнее задание.
+Написать калькулятор на четыре действия.
+Данные формы приходят в виде массива $_REQUEST
+
+https://youtu.be/tuILLkOWQSU
+https://youtu.be/1lHssCiFVbM
