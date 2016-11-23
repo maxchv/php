@@ -9,6 +9,7 @@ Start		https://youtu.be/7opBu3JgY08
 22.11.2016
 ----------
 
+PHPStorm config	https://youtu.be/ogHYV-oUft8
 Arrays		https://youtu.be/2c_rXEoUUe8
 
 ----------
