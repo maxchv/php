@@ -46,6 +46,12 @@ class Foo
 
 }
 
+function print_only_foo(Foo $foo) {
+
+}
+
+print_only_foo(new Foo());
+
 function print_array(array $arr, $offset = " ")
 {
     echo "<pre>";
