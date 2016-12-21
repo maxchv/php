@@ -23,3 +23,36 @@ functions	https://youtu.be/YjIrGgeX5Nw
 ----------
 
 functions deep	https://youtu.be/nXUmrlvxv0k
+
+----------
+06.12.2016
+----------
+
+sessions	https://youtu.be/fq3H8iq778g
+string		https://youtu.be/PGAhb5BSs7w
+
+----------
+12.12.2016
+----------
+
+Files and Dirs	https://youtu.be/6lAcGva97TU
+Uploads		https://youtu.be/5cjTRsKIe10
+
+----------
+13.12.2016
+----------
+
+Classes		https://youtu.be/N0bZMwMkIlM
+
+----------
+20.12.2016
+----------
+
+SQL		https://youtu.be/hqRhSb1mDuo
+PDO		https://youtu.be/DqiExbt70m0
+
+----------
+21.12.2016
+----------
+
+Squirity	https://youtu.be/6j65PcIQIr4
