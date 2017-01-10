@@ -1,0 +1,4 @@
+RewriteEngine On
+# при отсутствии файла - перенаправлять запрос на index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?PATH_INFO=$1 [L]
