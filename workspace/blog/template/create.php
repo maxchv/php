@@ -102,6 +102,9 @@
                 </div>
                 <button type="button" id="send" class="btn btn-default">Submit</button>
             </form>
+            <div>
+                <span id="status"></span>
+            </div>
         </div>
 
         <!-- Blog Sidebar Widgets Column -->
