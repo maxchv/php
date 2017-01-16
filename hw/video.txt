@@ -68,3 +68,10 @@ RestFull	https://youtu.be/VD8DnevPBpA
 ----------
 
 Blog		https://youtu.be/U1bK_pryxSs
+
+----------
+16.01.2017
+----------
+
+AjaxUpload	https://youtu.be/F_HH264o_os
+		https://youtu.be/CVAWYK4xr1k
