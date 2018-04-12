@@ -1,0 +1,47 @@
+video: https://youtu.be/jEhc6rm7bbM
+
+Ќаписать php скрипт дл€ анализа журнала access.log
+
+∆урнал содержит информацию с следующем формате:
+
+10.2.115.21 - - [12/Apr/2018:11:43:03 +0300] "GET /lesson10/index.php?q=regexp HTTP/1.1" 200 3051 "http://15-01/lesson10/index.php" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+10.2.115.21 - - [12/Apr/2018:11:43:11 +0300] "GET /lesson10/index.php?q=regexp HTTP/1.1" 200 3051 "http://15-01/lesson10/index.php" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+::1 - - [12/Apr/2018:12:05:25 +0300] "GET / HTTP/1.1" 200 3534 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+::1 - - [12/Apr/2018:12:05:25 +0300] "GET /favicon.ico HTTP/1.1" 404 1054 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+::1 - - [12/Apr/2018:12:05:34 +0300] "GET /lesson10/ HTTP/1.1" 200 2260 "http://localhost/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+::1 - - [12/Apr/2018:12:05:34 +0300] "GET /lesson10/css/style.css HTTP/1.1" 200 40 "http://localhost/lesson10/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+::1 - - [12/Apr/2018:12:05:34 +0300] "GET /lesson10/js/script.js HTTP/1.1" 200 686 "http://localhost/lesson10/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+....
+
+где 10.2.115.21 - ip адрес клиента
+    [12/Apr/2018:11:43:11 +0300] - врем€ запроса
+    "GET /lesson10/index.php?q=regexp HTTP/1.1" - строка запроса
+    200  - код ответа
+    3051 - размер ответа
+   "http://15-01/lesson10/index.php" - страница ответа
+   "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36" - User-Agent клиента (браузера)
+
+
+Ќеобходимо: 
+	1. »спользу€ регул€рные выражени€ распарсить журнал и выт€нуть следующие данные: ip адрес клиента, страница запроса, User-Agent клиента
+	2. —формировать и вывести следующую статистическую информацию:	
+		2.1  оличество уникальных посетителей
+		2.2 ƒес€ть наиболее посещаемых страниц (не учитывать картинки, js и css) отсортированных по посещаемости. ”честь, что /lesson.php и / - одна и та же страница.
+		2.3 –ейтинг (по попул€рности) браузеров клиента
+
+ѕример вывода:
+	 оличество уникальных посетителей сайта: 101
+	Ќаиболее посещаемые страницы:
+		/ 		- 100 запросов
+		/lesson10 	- 50  запросов
+		/lesson1	- 10  запросов		
+                .....
+        Ѕраузеры:
+		1. Chrome (¬ерси€ 65.0.3325.181) - 30 клиентов
+		2. Firefox (¬ерси€ 59.0) - 5 клиентов
+		3. Opera ...
+                ...
+
+ƒополнительное задание:
+	¬ывести количество уникальных посетителей по дн€м за предыдущий мес€ц
+		
