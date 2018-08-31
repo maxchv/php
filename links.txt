@@ -1,2 +1,3 @@
 PHP Standards Recommendations	http://www.php-fig.org/
 Тесты http://www.zendexam.com/question/430/what-is-the-output-of-the-following/
+Задачник: http://theory.phphtml.net
