@@ -1,0 +1,6 @@
+video: https://youtu.be/S9yelVZL6lk
+
+Задание:
+	1. Распакавать архив hw04.rar в папку htdocs 
+	2. Реализовать функции push, pop, shift, unshift, slice, chunk и union описанные в файле array.php
+	3. В задании 2 НЕ использовать стандартные функции PHP (array_*) для работы с массивами
